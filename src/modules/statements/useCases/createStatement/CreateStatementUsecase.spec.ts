@@ -3,7 +3,6 @@ import { OperationType } from "../../entities/Statement";
 import { InMemoryStatementsRepository } from "../../repositories/in-memory/InMemoryStatementsRepository";
 import { CreateStatementError } from "./CreateStatementError";
 import { CreateStatementUseCase } from "./CreateStatementUseCase";
-import { ICreateStatementDTO } from "./ICreateStatementDTO";
 
 const makeSut = () => {
   const statementsRepository = new InMemoryStatementsRepository()
@@ -60,13 +59,6 @@ describe('Create Statement Usecase', () => {
       email: 'any_email',
       password: 'any_password'
     })
-
-    // await statementsRepository.create({
-    //   user_id: user.id as string,
-    //   type: OperationType.DEPOSIT,
-    //   amount: 100,
-    //   description: 'any_description'
-    // })
 
     const response = await sut.execute({
       user_id: user.id as string,
