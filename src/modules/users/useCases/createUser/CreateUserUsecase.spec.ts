@@ -13,7 +13,7 @@ const makeSut = () => {
 }
 
 
-describe('CreateUserUsecase', () => {
+describe('Create User Usecase', () => {
   it('should not be able to create a user if already exists', async () => {
     const { sut, usersRepository } = makeSut()
     await usersRepository.create({

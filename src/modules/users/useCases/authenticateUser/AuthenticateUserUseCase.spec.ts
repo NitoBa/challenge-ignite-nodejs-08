@@ -14,7 +14,7 @@ const makeSut = () => {
 }
 
 
-describe('CreateUserUsecase', () => {
+describe('Authenticate User Usecase', () => {
   it('should not be able to authenticate a user if not exists', async () => {
     const { sut } = makeSut()
 

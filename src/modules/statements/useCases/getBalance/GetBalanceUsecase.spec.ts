@@ -16,7 +16,7 @@ const makeSut = () => {
   }
 }
 
-describe('Create Statement Usecase', () => {
+describe('Get balance Usecase', () => {
   it('should not be able to get balance to inexistent user', async () => {
     const { sut } = makeSut()
 

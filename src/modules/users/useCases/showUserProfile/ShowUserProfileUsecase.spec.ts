@@ -15,7 +15,7 @@ const makeSut = () => {
 }
 
 
-describe('CreateUserUsecase', () => {
+describe('Show User Profile Use Case', () => {
   it('should not be able to get user infos if not exists', async () => {
     const { sut } = makeSut()
 
